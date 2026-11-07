@@ -1,0 +1,156 @@
+
+:root {
+  font-family: Inter, system-ui, Arial, sans-serif;
+  color: #20304c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fc;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 40px 22px;
+}
+
+.page-header {
+  margin-bottom: 25px;
+}
+
+.eyebrow {
+  color: #0d9a86;
+  letter-spacing: .14em;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: clamp(28px, 5vw, 42px);
+}
+
+.page-header p {
+  color: #66738a;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+  margin: 25px 0;
+}
+
+.stats div,
+.panel {
+  background: white;
+  border: 1px solid #dfe5f0;
+  border-radius: 17px;
+  padding: 22px;
+}
+
+.stats strong {
+  display: block;
+  color: #127f77;
+  font-size: 28px;
+}
+
+.stats span {
+  color: #68758b;
+  font-size: 12px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 17px;
+  align-items: start;
+}
+
+.panel h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+}
+
+.panel label {
+  display: block;
+  font-weight: 700;
+  font-size: 13px;
+  margin: 14px 0 6px;
+}
+
+.panel input,
+.panel textarea {
+  display: block;
+  padding: 12px;
+  border-radius: 9px;
+  border: 1px solid #d4dbea;
+  width: 100%;
+}
+
+.panel button {
+  border: 0;
+  color: white;
+  background: #13877e;
+  padding: 10px 14px;
+  border-radius: 9px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.panel .danger {
+  background: #ce5b65;
+  margin-top: 5px;
+}
+
+.panel .error {
+  background: #fff0f1;
+  color: #aa283e;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.event-list {
+  display: grid;
+  gap: 11px;
+}
+
+.event-card {
+  border-radius: 10px;
+  border: 1px solid #e6e9f0;
+  padding: 15px;
+}
+
+.event-card h3 {
+  margin: 0 0 9px;
+}
+
+.event-card p {
+  margin: 5px 0;
+  color: #526076;
+}
+
+@media (max-width: 700px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .stats {
+    gap: 7px;
+  }
+
+  .stats div {
+    padding: 12px;
+  }
+}
